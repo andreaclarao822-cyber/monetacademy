@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MonetAcademy · Finanzas personales claras y prácticas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#inicio">Monet<span>Academy</span></a>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="#temas">Temas</a></li>
+        <li><a href="#tutorias">Tutorías</a></li>
+        <li><a href="#herramientas">Herramientas</a></li>
+        <li><a href="#experiencias">Experiencias</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <a class="btn" href="#contacto">Reservar tutoría</a>
+  </div>
+</header>
+
+<main id="inicio">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Aprende a manejar tu dinero con calma y claridad</h1>
+        <p class="lead">MonetAcademy enseña los conceptos básicos de las finanzas personales de forma sencilla y práctica, para que construyas hábitos financieros que duren.</p>
+        <div class="actions">
+          <a class="btn" href="#temas">Explorar los temas</a>
+          <a class="btn ghost" href="#herramientas">Probar las herramientas</a>
+        </div>
+      </div>
+      <aside class="coin" aria-label="Ejemplo de distribución del ingreso">
+        <h3>Una regla sencilla para empezar</h3>
+        <p class="small">Distribución 50/30/20 de tu ingreso mensual.</p>
+        <div class="bar" role="img" aria-label="50% necesidades, 30% deseos, 20% ahorro">
+          <i style="width:50%;background:var(--rose)"></i>
+          <i style="width:30%;background:#8DB09B"></i>
+          <i style="width:20%;background:#9C8BB8"></i>
+        </div>
+        <ul class="legend">
+          <li><span><span class="dot" style="background:var(--rose)"></span>Necesidades</span><b>50%</b></li>
+          <li><span><span class="dot" style="background:#8DB09B"></span>Deseos</span><b>30%</b></li>
+          <li><span><span class="dot" style="background:#9C8BB8"></span>Ahorro</span><b>20%</b></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+
+  <section id="temas">
+    <div class="wrap">
+      <div class="head">
+        <h2>Lo esencial para organizar tu dinero</h2>
+        <p>Contenidos breves y ordenados, pensados para quienes empiezan.</p>
+      </div>
+      <div class="grid">
+        <article class="card"><div class="ico i1" aria-hidden="true">🐷</div><h3>Ahorro</h3><p>Cómo crear el hábito de ahorrar, fijar metas y formar un fondo de emergencia.</p></article>
+        <article class="card"><div class="ico i2" aria-hidden="true">📒</div><h3>Presupuesto</h3><p>Aprende a registrar ingresos y gastos para saber a dónde va tu dinero cada mes.</p></article>
+        <article class="card"><div class="ico i3" aria-hidden="true">💳</div><h3>Deudas y crédito</h3><p>Entiende los intereses, usa las tarjetas con criterio y evita el sobreendeudamiento.</p></article>
+        <article class="card"><div class="ico i2" aria-hidden="true">🎯</div><h3>Metas financieras</h3><p>Convierte tus objetivos en planes concretos, con plazos y montos realistas.</p></article>
+        <article class="card"><div class="ico i3" aria-hidden="true">📈</div><h3>Primeros pasos para invertir</h3><p>Conceptos básicos de riesgo, rentabilidad y plazo antes de dar el primer paso.</p></article>
+        <article class="card"><div class="ico i1" aria-hidden="true">🧠</div><h3>Hábitos y decisiones</h3><p>Reconoce los hábitos que influyen en tus compras y cambia los que te perjudican.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="tutorias" class="alt">
+    <div class="wrap">
+      <div class="head">
+        <h2>Tutorías paso a paso</h2>
+        <p>Acompañamiento personalizado, a tu ritmo y sin tecnicismos.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><h3>Cuéntanos tu situación</h3><p>Nos explicas tus metas y lo que más te cuesta de manejar tu dinero.</p></div>
+        <div class="step"><h3>Recibe tu plan</h3><p>Preparamos contigo un plan sencillo de ahorro y presupuesto.</p></div>
+        <div class="step"><h3>Practica con seguimiento</h3><p>Aplicas lo aprendido y resolvemos tus dudas en cada sesión.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="herramientas">
+    <div class="wrap">
+      <div class="head">
+        <h2>Herramientas para practicar</h2>
+        <p>Elige una herramienta, cambia los valores y mira el resultado al instante.</p>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Herramientas">
+        <button class="tab" role="tab" data-p="p1" aria-selected="true">Presupuesto 50/30/20</button>
+        <button class="tab" role="tab" data-p="p2" aria-selected="false">Meta de ahorro</button>
+        <button class="tab" role="tab" data-p="p3" aria-selected="false">Interés compuesto</button>
+      </div>
+      <div class="calc panel" id="p2" role="tabpanel" hidden>
+        <div>
+          <div class="field"><label for="mMeta">Meta de ahorro (COP)</label><input id="mMeta" type="number" min="0" step="50000" value="3000000" inputmode="numeric"></div>
+          <div class="field"><label for="mAhorro">Ya tengo ahorrado (COP)</label><input id="mAhorro" type="number" min="0" step="50000" value="500000" inputmode="numeric"></div>
+          <div class="field"><label for="mMeses">Plazo en meses</label><input id="mMeses" type="number" min="1" step="1" value="10" inputmode="numeric"></div>
+        </div>
+        <div class="res" aria-live="polite">
+          <div class="row"><span>Ahorro mensual necesario<small>Para llegar a tu meta a tiempo</small></span><b id="mCuota">—</b></div>
+          <div class="row"><span>Aún te falta<small id="mPct">—</small></span><b id="mFalta">—</b></div>
+          <div class="track"><i id="mBar"></i></div>
+        </div>
+      </div>
+      <div class="calc panel" id="p3" role="tabpanel" hidden>
+        <div>
+          <div class="field"><label for="iAporte">Aporte mensual (COP)</label><input id="iAporte" type="number" min="0" step="10000" value="200000" inputmode="numeric"></div>
+          <div class="field"><label for="iTasa">Tasa efectiva anual (%)</label><input id="iTasa" type="number" min="0" step="0.5" value="8" inputmode="decimal"></div>
+          <div class="field"><label for="iAnios">Años</label><input id="iAnios" type="number" min="1" step="1" value="5" inputmode="numeric"></div>
+          <p class="note">Cálculo ilustrativo. No garantiza una rentabilidad real.</p>
+        </div>
+        <div class="res" aria-live="polite">
+          <div class="row"><span>Saldo final<small>Aportes más intereses</small></span><b id="iFinal">—</b></div>
+          <div class="row"><span>Total aportado<small>Lo que pones tú</small></span><b id="iAport">—</b></div>
+          <div class="row"><span>Intereses ganados<small>Lo que crece tu dinero</small></span><b id="iInt">—</b></div>
+        </div>
+      </div>
+      <div class="calc panel" id="p1" role="tabpanel">
+        <div>
+          <label for="ingreso">Ingreso mensual (COP)</label>
+          <input id="ingreso" type="number" min="0" step="10000" value="2000000" inputmode="numeric">
+          <p class="note">Es una guía general. Ajústala según tus gastos y tus metas.</p>
+        </div>
+        <div class="res" aria-live="polite">
+          <div class="row"><span>Necesidades<small>Vivienda, comida, transporte</small></span><b id="r50">—</b></div>
+          <div class="row"><span>Deseos<small>Ocio, salidas, compras</small></span><b id="r30">—</b></div>
+          <div class="row"><span>Ahorro<small>Metas y fondo de emergencia</small></span><b id="r20">—</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiencias de ejemplo: reemplázalas por testimonios reales -->
+  <section id="experiencias">
+    <div class="wrap">
+      <div class="head">
+        <h2>Lo que cuentan quienes empezaron</h2>
+        <p>Experiencias de personas que ordenaron sus finanzas paso a paso.</p>
+      </div>
+      <div class="quotes" aria-live="polite">
+        <blockquote class="q"><p>«Nunca había hecho un presupuesto. En tres sesiones ordené mis gastos y logré ahorrar desde el primer mes.»</p><div class="who"><b>Camila R.</b> · Estudiante universitaria</div></blockquote>
+        <blockquote class="q"><p>«Entendí cómo funcionan los intereses de mi tarjeta y armé un plan claro para pagarla sin ahogarme.»</p><div class="who"><b>Andrés M.</b> · Joven profesional</div></blockquote>
+        <blockquote class="q"><p>«Separé mis gastos personales de los del negocio y por fin tengo una meta de ahorro que sí cumplo.»</p><div class="who"><b>Laura P.</b> · Emprendedora</div></blockquote>
+        <div class="qctl">
+          <button class="qbtn" id="prev" aria-label="Experiencia anterior">‹</button>
+          <button class="qbtn" id="next" aria-label="Experiencia siguiente">›</button>
+          <div class="dots" id="dots"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact">
+    <div class="wrap">
+      <div class="head">
+        <h2>Da el primer paso hoy</h2>
+        <p>Escríbenos y agenda tu primera tutoría de finanzas personales.</p>
+      </div>
+      <form class="form" id="form">
+        <div class="field"><label for="nombre">Nombre</label><input id="nombre" name="nombre" type="text" required autocomplete="name"></div>
+        <div class="field"><label for="correo">Correo electrónico</label><input id="correo" name="correo" type="email" required autocomplete="email"></div>
+        <div class="field"><label for="tema">¿Qué quieres aprender?</label>
+          <select id="tema" name="tema"><option>Ahorro</option><option>Presupuesto</option><option>Deudas y crédito</option><option>Metas financieras</option><option>Primeros pasos para invertir</option><option>Otro tema</option></select></div>
+        <div class="field"><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" required></textarea></div>
+        <button class="btn" type="submit">Enviar mensaje</button>
+      </form>
+      <div class="form ok" id="ok" role="status" hidden>
+        <h3>Gracias, <span id="okName"></span></h3>
+        <p>Tu mensaje está listo. Ábrelo en tu correo para enviarlo a MonetAcademy.</p>
+        <a class="btn" id="okLink" href="#">Abrir en mi correo</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 MonetAcademy. Todos los derechos reservados.</span>
+    <span>Educación financiera sencilla y práctica.</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
